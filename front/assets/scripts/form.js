@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   var behavior = function (val) {
     return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
   }
@@ -8,6 +9,7 @@ $(document).ready(function () {
     }
   };
   $('#phone').mask(behavior, options);
+
   $("form").submit(function (event) {
     event.preventDefault();
 
@@ -30,7 +32,7 @@ $(document).ready(function () {
       return;
     }
 
-    // // Validação do formato da data de nascimento
+    // Validação do formato da data de nascimento
     var birthdayRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (!birthdayRegex.test(birthday)) {
       alert("Por favor, insira uma data de nascimento válida no formato AAAA-MM-DD.");
