@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  background-color: rgb(19, 20, 20);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 26px;
+  margin: 2em 0;
+  color: #ffffff;
+}
+
+.cabecalho{
+  background-color: #000000;
+  width: 100%;
+	padding: 1% 0% 2% 0%;
+}
+
+.cabecalho__menu {
+	display: flex;
+  justify-content: center;
+	gap: 80px;
+}
+
+.cabecalho__menu__link{
+	font-family: 'Roboto', 'sans-serif';
+	font-weight: 600;
+	font-size: 2rem;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.container__form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.container__maps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  width: 60%;
+  height: 400px;
+  border: 2px solid #ffffff;
+}
+
+input {
+  display: block;
+  height: 22px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+
+label {
+  color: #000000;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 4em 4em;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color:#151575;
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  min-height:30px; 
+  min-width: 120px;
+}
